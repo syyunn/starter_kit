@@ -1,5 +1,9 @@
 const Marketplace = artifacts.require('./Marketplace.sol')
 
+require('chai')
+    .use(require('chai-as-promised'))
+    .should()
+
 contract('Marketplace', (accounts) => {
     let marketplace
 
