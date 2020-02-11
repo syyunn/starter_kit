@@ -4,7 +4,8 @@ require('chai')
     .use(require('chai-as-promised'))
     .should()
 
-contract('Marketplace', (accounts) => {
+
+contract('Marketplace', ([deployer, seller, buyer]) => {
     let marketplace
 
     before(async () => {
